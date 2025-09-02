@@ -1,0 +1,8 @@
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["@octokit/rest"]
+
+[[redirects]]
+  from = "/share/:id"
+  to = "/.netlify/functions/share?id=:id"
+  status = 200
